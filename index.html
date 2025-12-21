@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Albert García | Artista 2D / 3D & Game Artist</title>
+  <meta name="description" content="Portafolio profesional de Albert García. Artista 2D y 3D, concept artist y game artist con juegos publicados en Google Play." />
+
+  <!-- SEO / Social -->
+  <meta property="og:title" content="Albert García – Arte 2D / 3D & Videojuegos" />
+  <meta property="og:description" content="Concept art, modelado 3D, UI y videojuegos publicados en Play Store." />
+  <meta property="og:type" content="website" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0e0f1a;
+      --card:#1b1c2a;
+      --accent1:#00b3ff;
+      --accent2:#ff7a18;
+      --text:#e6e6eb;
+      --muted:#a0a3bd;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    img{display:block;max-width:100%}
+    a{text-decoration:none;color:inherit}
+
+    header{
+      position:sticky;top:0;z-index:1000;
+      background:rgba(10,10,20,.6);
+      backdrop-filter:blur(10px);
+      padding:1rem 2.5rem;
+      display:flex;justify-content:space-between;align-items:center
+    }
+    .logo{font-family:'Bebas Neue',cursive;font-size:2rem;letter-spacing:2px;color:var(--accent1)}
+    nav a{margin-left:1.5rem;font-weight:600;color:var(--muted);transition:.3s}
+    nav a:hover{color:var(--accent2)}
+
+    .hero{
+      min-height:85vh;
+      display:flex;align-items:center;justify-content:center;
+      background:
+        linear-gradient(135deg,rgba(0,0,0,.85),rgba(0,0,0,.2)),
+        url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      text-align:center;
+      padding:0 1.5rem
+    }
+    .hero h1{font-family:'Bebas Neue',cursive;font-size:4rem;letter-spacing:3px}
+    .hero p{max-width:700px;margin:1rem auto 2rem;font-size:1.15rem;color:var(--muted)}
+
+    .btn{
+      display:inline-block;
+      padding:.8rem 1.8rem;
+      border-radius:6px;
+      background:linear-gradient(135deg,var(--accent1),var(--accent2));
+      color:#fff;font-weight:600;
+      transition:.3s
+    }
+    .btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,179,255,.35)}
+
+    main{padding:3.5rem 3rem;max-width:1300px;margin:auto}
+    section{margin-bottom:4rem}
+
+    h2{
+      font-family:'Bebas Neue',cursive;
+      font-size:2.4rem;
+      margin-bottom:1.8rem;
+      position:relative
+    }
+    h2::after{
+      content:'';display:block;width:60px;height:4px;
+      background:var(--accent1);margin-top:.5rem
+    }
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.8rem}
+
+    .card{
+      background:var(--card);
+      border-radius:12px;
+      overflow:hidden;
+      transition:.35s;
+      box-shadow:0 10px 40px rgba(0,0,0,.35)
+    }
+    .card:hover{transform:translateY(-6px)}
+    .card img{height:200px;object-fit:cover}
+    .card-body{padding:1.2rem}
+    .card-body h3{color:var(--accent2);margin-bottom:.4rem}
+    .card-body p{font-size:.95rem;color:var(--muted)}
+
+    .apps{
+      background:linear-gradient(135deg,#16172a,#1f213a);
+      border-radius:14px;padding:2.5rem
+    }
+    .apps ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+    .apps li{background:#0004;padding:1rem;border-radius:8px}
+    .apps a{color:var(--accent1);font-weight:600}
+
+    footer{
+      background:#0006;
+      padding:2.5rem 1.5rem;
+      text-align:center;
+      color:var(--muted)
+    }
+
+    @media(max-width:768px){
+      header{padding:1rem}
+      main{padding:2rem 1.5rem}
+      .hero h1{font-size:2.6rem}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">ALBERT GARCÍA</div>
+  <nav>
+    <a href="#apps">Apps</a>
+    <a href="#3d">3D</a>
+    <a href="#2d">2D</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Game Artist & Concept Artist</h1>
+    <p>Artista 2D / 3D especializado en videojuegos móviles. Experiencia real con títulos publicados en Google Play.</p>
+    <a href="#contacto" class="btn">Contactar</a>
+  </div>
+</section>
+
+<main>
+
+  <section id="apps" class="apps">
+    <h2>Juegos publicados</h2>
+    <ul>
+      <li><a href="https://play.google.com/store/apps/details?id=com.nftgco.jigsawpuzzle" target="_blank">Jigsaw Puzzle – UI, arte 2D</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.nftgco.GaxosBrawlBots" target="_blank">Gaxos Brawl Bots – Arte 3D, personajes</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.ntfgco.aispaceshooter" target="_blank">AI Space Shooter – Assets, FX</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.nftgco.battleships" target="_blank">Battleships – UI, ilustración</a></li>
+      <li><a href="https://albertgarciacasadella.mygamesonline.org/" target="_blank">Portfolio completo online</a></li>
+    </ul>
+  </section>
+
+  <section id="3d">
+    <h2>Arte 3D</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/600x400/00b3ff/ffffff?text=Character+3D" alt="Personaje 3D">
+        <div class="card-body">
+          <h3>Personaje Stylized</h3>
+          <p>Blender · ZBrush · Substance Painter</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/600x400/3355ff/ffffff?text=Hard+Surface" alt="Hard surface">
+        <div class="card-body">
+          <h3>Hard Surface</h3>
+          <p>Assets optimizados para móvil</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/600x400/ff7a18/ffffff?text=Environment" alt="Environment">
+        <div class="card-body">
+          <h3>Environment</h3>
+          <p>Lighting y look-dev</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="2d">
+    <h2>Arte 2D & Concept</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/600x400/ff3355/ffffff?text=Concept+Art" alt="Concept art">
+        <div class="card-body">
+          <h3>Concept Art</h3>
+          <p>Photoshop · Krita</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/600x400/ffaa00/ffffff?text=UI+Mobile" alt="UI mobile">
+        <div class="card-body">
+          <h3>UI Mobile</h3>
+          <p>Interfaces para juegos móviles</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/600x400/00ffaa/ffffff?text=Storyboard" alt="Storyboard">
+        <div class="card-body">
+          <h3>Storyboard</h3>
+          <p>Narrativa visual</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Disponible para freelance, remoto o estudio.</p>
+    <p><strong>Email:</strong> <a href="mailto:agarcia.crn@artsgrafiques.org">agarcia.crn@artsgrafiques.org</a></p>
+    <p><strong>Tel:</strong> <a href="tel:+34640387984">+34 640 38 79 84</a></p>
+  </section>
+
+</main>
+
+<footer>
+  © 2025 Albert García · Game Artist & Concept Artist
+</footer>
+
+</body>
+</html>
